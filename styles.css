@@ -1,0 +1,169 @@
+body{
+  /* text-align: center; */
+}
+
+.display-4{
+  font-family: fantasy;
+  color: white;
+}
+
+.lead{
+  text-align: center;
+  font-size: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.content1{
+  color: white;
+  text-align: center;
+  padding-bottom: 5px;
+  background-image: url("back3.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+
+
+
+.popout {
+    animation: popout 1s ease;
+    animation: popout 1s ease;
+    font-family: 'The Nautigal', cursive;
+}
+
+@keyframes popout {
+    from{transform:scale(0)}
+    80%{transform:scale(1.2)}
+    to{transform:scale(1)}
+}
+@keyframes popout {
+    from{-webkit-transform:scale(0)}
+    80%{-webkit-transform:scale(1.2)}
+    to{-webkit-transform:scale(1)}
+}
+
+
+@keyframes okay {
+  from{
+     opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.nvpic, .display-4{
+  animation: okay 2s linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 15% 0;
+  }
+}
+#animate-area {
+  background-image: url("back3.jpg");
+  background-position: 0px 0px;
+  background-repeat: space;
+  animation: animatedBackground 5s linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+.nvpic{
+  margin-top: 20px;
+  width: 20%;
+  border-radius:50%;
+  /* border-style: solid;
+  border-width: 2px; */
+}
+
+.educationStyle{
+  text-align: center;
+  margin-top: 20px;
+  padding:7% 15%;
+}
+
+.sma{
+  width: 30%;
+  border-radius: 0%;
+}
+.pec{
+  width: 30%;
+  border-radius: 0%;
+}
+
+.feature-title{
+  display: inline-block;
+}
+
+p {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-bottom: 5%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+#technical{
+  padding:15% 15%;
+  color: white;
+  /* background-color: #85e085; */
+  background-color: black;
+}
+
+.pro-img{
+  width: 10%;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+@media (max-width:1028px) {
+  .content1{
+    text-align: center;
+  }
+
+  .nvpic{
+    position: static;
+    width: 20%;
+  }
+  .row{
+    text-align: center;
+
+  }
+
+  .lead{
+    text-align: center;
+    font-size: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .nvpic{
+    margin-top: 30px;
+    width: 30%;
+    border-radius:50%;
+  }
+}
