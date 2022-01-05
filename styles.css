@@ -81,8 +81,10 @@ body{
 
 .nvpic{
   margin-top: 20px;
+  margin-bottom: 20px;
   width: 20%;
   border-radius:50%;
+
   /* border-style: solid;
   border-width: 2px; */
 }
@@ -157,7 +159,7 @@ p {
 
   .lead{
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -166,4 +168,27 @@ p {
     width: 30%;
     border-radius:50%;
   }
+
+
+
+  @keyframes animatedBackground {
+    from {
+      background-position: 15% 0;
+    }
+    to {
+      background-position: 30% 0;
+    }
+  }
+  #animate-area {
+    background-image: url("back3.jpg");
+    background-position: 0px 0px;
+    background-repeat: space;
+    animation: animatedBackground 5s linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+
+
+
 }
